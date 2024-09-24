@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Marker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="text-center mb-5">Bookr Marker</h1>
+    <hr>
+<h2 class="text-center my-5"><i class="fa-solid fa-bookmark fa-beat-fade icon1" ></i> Bookmark your favorite site <i class="fa-solid fa-bookmark fa-beat-fade icon2" ></i></h2>
+<div class="container">
+    <label for="sitename" class="mb-2"><i class="fa-solid fa-book-bookmark icon3"></i>Site Name</label>
+    <input type="text" class="form-control mb-3" id="sitename">
+    <label for="siteurl" class="mb-2"><i class="fa-solid fa-share icon4"></i> Site URL</label>
+    <input type="text"  class="form-control mb-4" id="siteurl">
+    <div id="alert" class="alert alert alert-danger d-none">
+        The URL you entered is not valid
+
+    </div>
+    <button class="button-87"  id="Add" onclick="Addbook()">Add Bookmark</button>
+    <table class="table"> 
+        <thead>
+            <tr>
+                <th >Site Name</th>
+                <th >Site URL</th>
+                <th >Visit</th>
+                <th class="text-center">Delete</th>
+            </tr>
+            
+        </thead>
+        <tbody id="tabledata">
+           
+        </tbody>
+    </table>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

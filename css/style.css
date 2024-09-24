@@ -1,0 +1,97 @@
+@font-face {
+    font-family: dance;
+    src: url(../DancingScript-VariableFont_wght.ttf);
+}
+body{
+    background-color: antiquewhite;
+}
+h1{
+    font-size: 60px;
+    font-weight: 900;
+    font-family: dance;
+    position: relative;
+}
+h1::after{
+    text-align: center;
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    width: 300px;
+    height: 10px;
+    background-color: aliceblue;
+}
+.icon1{
+    padding-right: 30px;
+}
+.icon2{
+    padding-left: 30px;
+}
+.icon3{
+    padding: 0px 10px 0px 0px;
+}
+.icon4{
+    padding: 0px 4px 0px 0px;
+}
+label{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.button-87 {
+  margin: 0px 0px 20px 0px;
+  padding: 7px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 500;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+@media only screen and (min-width: 350px) and (max-width:600px)  {
+    h1::after{
+    
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 60px;
+        width: 300px;
+        height: 10px;
+        background-color: aliceblue;
+    }
+    
+}
+
+@media only screen and (min-width: 601px) and (max-width:1024px)  {
+    h1::after{
+    
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 350px;
+        width: 300px;
+        height: 10px;
+        background-color: aliceblue;
+    }
+    
+}
